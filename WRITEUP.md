@@ -116,8 +116,7 @@ Next we have the matrix for the test file followed by the number of rows in the 
 
 Finally, we have the file name followed by the fraction of instances that were classified correctly. Then the second number is the fraction of abnormal instances that were classified correctly. Lastly, the third number is the fractoin of normal instances that were classified correctly. 
 
-To run the K-Nearest Neighbor version of this code you will need to add a new flag to your run command "k". Information about the new flag can be found by running the following command: 
-
+The second build example is how to run the program using the K_Nearest_Neighbor.py file.
 ```
 python3 K_Nearest_Neighbor.py --help
 usage: K_Nearest_Neighbor.py [-h] [--train TRAIN] [--test TEST] [--k K]
@@ -140,11 +139,12 @@ python3 K_Nearest_Neighbor.py -tr <YOUR TRAIN FILE HERE> -te <YOUR TEST FILE HER
 ```
 You will need to replace <YOUR TRAIN FILE HERE> with whatever file you want to use for your train set and <YOUR TEST FILE HERE> with whatever test file you wish to use. K will need to be some integer. Ideally only use ODD numbers to avoid a tie.
 
-An example would be as follows: 
+An example with spect-orig files and k being 5 would be as follows: 
 ```
 python3 K_Nearest_Neighbor.py -tr spect-orig.train.csv -te spect-orig.test.csv -k 5
 ```
-This code will print the results in the exact same format as previously mentioned above.
+This code will print the results in the exact same format as the Naive Bayesian Learner.
 
-# Algorithm
+# Results
+The Naive Bayesian Learner ended up producing quite accurate results with some variation of about 3-5 incorrect guesses on the resplit data and a 100% accuracy on orig and the itg datasets. The K-Nearest Neighbor proved to be a little more challlenging for me. I wasn't able to get it to work 100% correctly. It produces acceptable results for the orig set but is not accurate for resplit and itg. The algorithm assumes that no hearts are abnormal which we know is not true. While this does give me an average of around 70% accuracy it is not ideal. This 30% error gap is likely due to some minor error in my algorithm. 
 
