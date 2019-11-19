@@ -66,7 +66,7 @@ To run the program run the following command:
 ```
 python3 Naive_Bayesian.py -tr <YOUR TRAIN FILE HERE> -te <YOUR TEST FILE HERE>
 ```
-You will need to replace <YOUR TRAIN FILE HERE> with whatever file you want to use for your train set and <YOUR TEST FILE HERE> with whatever test file you wish to use.
+You will need to replace **YOUR TRAIN FILE HERE** with whatever file you want to use for your train set and **YOUR TEST FILE HERE** with whatever test file you wish to use.
 
 For example if you wanted to use the spect-orig files you would type: 
 ```
@@ -137,7 +137,7 @@ To run K-Nearest Neighbor run the following command:
 ```
 python3 K_Nearest_Neighbor.py -tr <YOUR TRAIN FILE HERE> -te <YOUR TEST FILE HERE> -k <YOUR K NUMBER>
 ```
-You will need to replace <YOUR TRAIN FILE HERE> with whatever file you want to use for your train set and <YOUR TEST FILE HERE> with whatever test file you wish to use. K will need to be some integer. Ideally only use ODD numbers to avoid a tie.
+You will need to replace **YOUR TRAIN FILE HERE** with whatever file you want to use for your train set and **YOUR TEST FILE HERE** with whatever test file you wish to use. **YOUR k NUMBER** will need to be some positive integer. Ideally only use ODD numbers to avoid a tie.
 
 An example with spect-orig files and k being 5 would be as follows: 
 ```
